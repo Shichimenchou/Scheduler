@@ -12,37 +12,37 @@ day = (datetime.datetime.today().weekday() + 1) % 7
 schedule = []
 
 if day == 0:
-    F = open(str(Path.home()) + "/Schedule/" + "sunday.txt", "r")
+    F = open(str(Path.home()) + "/Projects/Schedule/" + "sunday.txt", "r")
     schedule += F.readlines()
     for i in range(0, 48):
         schedule[i] = schedule[i][:-1]
 if day == 1: 
-    F = open(str(Path.home()) + "/Schedule/" + "monday.txt", "r")
+    F = open(str(Path.home()) + "/Projects/Schedule/" + "monday.txt", "r")
     schedule += F.readlines()
     for i in range(0, 48):
         schedule[i] = schedule[i][:-1]
 if day == 2:
-    F = open(str(Path.home()) + "/Schedule/" + "tuesday.txt", "r")
+    F = open(str(Path.home()) + "/Projects/Schedule/" + "tuesday.txt", "r")
     schedule += F.readlines()
     for i in range(0, 48):
         schedule[i] = schedule[i][:-1]
 if day == 3:
-    F = open(str(Path.home()) + "/Schedule/" + "wednesday.txt", "r")
+    F = open(str(Path.home()) + "/Projects/Schedule/" + "wednesday.txt", "r")
     schedule += F.readlines()
     for i in range(0, 48):
         schedule[i] = schedule[i][:-1]
 if day == 4:
-    F = open(str(Path.home()) + "/Schedule/" + "thursday.txt", "r")
+    F = open(str(Path.home()) + "/Projects/Schedule/" + "thursday.txt", "r")
     schedule += F.readlines()
     for i in range(0, 48):
         schedule[i] = schedule[i][:-1]
 if day == 5:
-    F = open(str(Path.home()) + "/Schedule/" + "friday.txt", "r")
+    F = open(str(Path.home()) + "/Projects/Schedule/" + "friday.txt", "r")
     schedule += F.readlines()
     for i in range(0, 48):
         schedule[i] = schedule[i][:-1]
 if day == 6:
-    F = open(str(Path.home()) + "/Schedule/" + "saturday.txt", "r")
+    F = open(str(Path.home()) + "/Projects/Schedule/" + "saturday.txt", "r")
     schedule += F.readlines()
     for i in range(0, 48):
         schedule[i] = schedule[i][:-1]
