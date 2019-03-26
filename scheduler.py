@@ -7,6 +7,14 @@ def block():
     # print("The current block is " + str(mins // 30))
     return mins // 30
 
+def blockToTime(blk):
+    hour = blk // 2
+    half = blk % 2
+    if half == 0:
+        return str(hour)
+    else:
+        return str(hour) + ":30"
+
 blk = block()
 day = (datetime.datetime.today().weekday() + 1) % 7
 schedule = []
@@ -47,4 +55,7 @@ if day == 6:
     for i in range(0, 48):
         schedule[i] = schedule[i][:-1]
 
-print(schedule[blk])
+if blk == 47:
+    print(blockToTime(blk) + " - " + schedule[blk] + " : 0 - " + schedule[0])
+else:
+    print(blockToTime(blk) + " - " + schedule[blk] + " : " + blockToTime(blk + 1) + " - " + schedule[blk + 1])

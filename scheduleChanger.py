@@ -13,11 +13,11 @@ d = args.day.lower()
 b1 = int(args.time1 * 2)
 b2 = int(args.time2 * 2)
 
-F = open(str(Path.home()) + "/Project/Schedule/" + d + ".txt", "r")
+F = open(str(Path.home()) + "/Projects/Schedule/" + d + ".txt", "r")
 old = F.readlines()
-os.remove(str(Path.home()) + "/Project/Schedule/" + d + ".txt")
+os.remove(str(Path.home()) + "/Projects/Schedule/" + d + ".txt")
 
-f = open(str(Path.home()) + "/Project/Schedule/" + d + ".txt", "w")
+f = open(str(Path.home()) + "/Projects/Schedule/" + d + ".txt", "w")
 if(b1 <= b2):
     for i in range(0, b1):
         f.write(old[i])
