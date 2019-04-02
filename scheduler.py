@@ -56,6 +56,6 @@ if day == 6:
         schedule[i] = schedule[i][:-1]
 
 if blk == 47:
-    print(schedule[blk] + " -> " + schedule[0])
+    print(schedule[blk] + " >> " + schedule[0])
 else:
-    print(schedule[blk] + " -> " + schedule[blk + 1])
+    print(schedule[blk] + " >> " + schedule[blk + 1])
